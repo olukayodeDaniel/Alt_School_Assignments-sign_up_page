@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+:root {
+  --normal-font-size: 14px;
+  --normal-color: #011C34;
+  --green: rgba(46, 196, 181, 0.479);
+  --form-color: #2EC4B6;
+  
+}
+
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgba(46, 196, 181, 0.103);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+main {
+
+  display: flex;
+  padding-inline-start: 140px;
+  padding-block-start: 100px;
+  gap: 100px;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+
+
+/* header style */
+header {
+  position: relative;
+  top: 100px;
+}
+
+
+header h1 {
+  font-family: "brown_bold", sans-serif;
+  color: #000B0A;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  /* 125% */
+  letter-spacing: -0.8px;
+  margin-block: 40px 20px;
+
+}
+
+
+header p {
+  width: 435px;
+  font-family: "brown_light", sans-serif;
+  color: #737373;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* form style */
+section {
+  width: 580px;
+  height: fit-content;
+  border-radius: 6px;
+  background: #FFF;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+  margin: 0%;
+  padding: 40px;
+}
+
+section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  color: var(--normal-color);
+  font-family: "brown_bold", sans-serif;
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+[type="text"],
+select,
+[type="date"] {
+  width: 238px;
+  height: 48px;
+  border: 2px solid #F0F0F0;
+  padding-left: 20px;
+}
+
+.input:focus,
+select:focus,
+[type="password"]:focus {
+  border: 2px solid var(--green);
+  outline: none;
+  color: #011C34;
+  font-family: "brown_bold", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding-left: 20px;
+  z-index: 9999;
+
+}
+
+select {
+  background-color: #FFF;
+  color: #737373;
+}
+
+option {
+  color: #737373;
+}
+
+[name="activity-level"],
+[type="password"] {
+  width: 500px;
+  height: 48px;
+  border: 2px solid #F0F0F0;
+  padding-left: 20px;
+}
+
+.password {
+  position: relative;
+}
+
+.password img {
+  position: absolute;
+  top: 40px;
+  left: 480px;
+  transform: translateY(-50%);
+  color: #aaa;
+  z-index: 9999;
+}
+
+.icon-input input {
+  padding-left: 30px;
+}
+
+/* Adjust based on icon width + padding */
+
+button {
+  width: 500px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: var(--form-color);
+  color: #FFF;
+  text-align: center;
+  font-family: "brown_bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  border: 0;
+  margin-top: 20px;
+}
+
+
+
+/* footer styling */
+footer {
+  color: #000;
+  font-family: "brown_bold";
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  /* 178.571% */
+  margin-left: 35px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--form-color);
+  font-family: "brown_bold";
+  font-size: var(--normal-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
+}
+
+.mobile-footer {
+  display: none;
+}
